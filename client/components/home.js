@@ -1,18 +1,25 @@
-import React, { useState } from 'react'
-import Head from './head'
-// import wave from '../assets/images/wave.jpg'
+import React, { useEffect, useState } from 'react'
+import { Route, useParams } from 'react-router-dom'
+import axios from 'axios'
+import Category from './category'
+import TaskList from './task-list'
 
 const Home = () => {
-  const [counter, setCounterNew] = useState(0)
+  const [categoryList, setCategoryList] = useState([])
+  const [taskList, setTaskList] = useState([])
+  const { category } = useParams()
 
+  useEffect(() => {
+    axios('/api/v1/categories').then(({ data }) => setCategoryList(data))
+  }, [])
+
+  useEffect(() => {
+    axios(`/api/v1/tasks/${category}`).then(({ data }) => setTaskList(data))
+  }, [category])
   return (
     <div>
-      <Head title="Hello" />
-      <img alt="wave" src="images/wave.jpg" />
-      <button type="button" onClick={() => setCounterNew(counter + 1)}>
-        updateCounter
-      </button>
-      <div> Hello World Dashboard {counter} </div>
+      <Route exact path="/" component={() => <Category categoryList={categoryList} />} />
+      <Route exact path="/:category" component={() => <TaskList taskList={taskList} />} />
     </div>
   )
 }
