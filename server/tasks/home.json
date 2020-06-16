@@ -1,25 +1,25 @@
 [
   {
     "taskId": "74rxJM2ly",
-    "title": "qwerty",
-    "status": "new"
+    "title": "cook",
+    "status": "blocked"
   },
   {
     "taskId": "74ixJM2ly",
-    "title": "Home task 1",
-    "status": "new"
+    "title": "clean",
+    "status": "done"
   },
   {
     "taskId": "9wVSedEcR",
-    "title": "Home task 2",
-    "status": "new",
+    "title": "sleep",
+    "status": "in progress",
     "_isDeleted": false,
     "_createdAt": 1591004120140,
     "_deletedAt": null
   },
   {
     "taskId": "uSXRxQ8bZ",
-    "title": "Home task 3",
+    "title": "look after baby",
     "status": "in progress",
     "_isDeleted": false,
     "_createdAt": 1591004515723,
@@ -27,8 +27,8 @@
   },
   {
     "taskId": "w8f9kbNZA",
-    "title": "Natalia",
-    "status": "blocked",
+    "title": "read",
+    "status": "new",
     "_isDeleted": true,
     "_createdAt": 1591207910112,
     "_deletedAt": null

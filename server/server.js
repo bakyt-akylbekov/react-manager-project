@@ -22,8 +22,10 @@ try {
   //   Root = (props) => <items.Root {...props} />
   //   console.log(JSON.stringify(items.Root))
   // })()
+  // eslint-disable-next-line no-console
   console.log(Root)
 } catch (ex) {
+  // eslint-disable-next-line no-console
   console.log(' run yarn build:prod to enable ssr')
 }
 
@@ -97,33 +99,37 @@ server.get('/api/v1/tasks/:category/:timespan', async (req, res) => {
 
 server.post('/api/v1/tasks/:category', async (req, res) => {
   const { category } = req.params // получаем название категории которые запросил клиент
-  const newTask = {
-    taskId: shortid.generate(),
-    title: req.body.title,
-    status: 'new',
-    _isDeleted: false,
-    _createdAt: +new Date(),
-    _deletedAt: null
+  if (Object.keys(req.body).length === 0) {
+    await write(category, [])
+  } else {
+    const newTask = {
+      taskId: shortid.generate(),
+      title: req.body.title, // в боди передаём объект
+      status: 'new',
+      _isDeleted: false,
+      _createdAt: +new Date(),
+      _deletedAt: null
+    }
+    const tasks = await read(category)
+    const updateTasks = [...tasks, newTask]
+    await write(category, updateTasks)
+    res.json({ status: 'success', newTask })
   }
-  const tasks = await read(category)
-  const updateTasks = [...tasks, newTask]
-  await write(category, updateTasks)
-  res.json({ status: 'success' })
 })
 
 server.patch('/api/v1/tasks/:category/:id', async (req, res) => {
   const { id, category } = req.params
   const newStatus = req.body
   const statuses = ['new', 'in progress', 'done', 'blocked']
-  if (statuses.includes(newStatus.status)) {
+  if (!statuses.includes(newStatus.status) && newStatus.title === undefined) {
+    res.status(501)
+    res.json({ status: 'error', message: 'incorrect status' })
+  } else {
     const tasks = await read(category)
     const newTasksList = tasks.map((el) => (el.taskId === id ? { ...el, ...newStatus } : el))
     const updateTask = getTasks(newTasksList.filter((el) => el.taskId === id))
     await write(category, newTasksList)
     res.json(...updateTask)
-  } else {
-    res.status(501)
-    res.json({ status: 'error', message: 'incorrect status' })
   }
 })
 
@@ -182,4 +188,5 @@ if (config.isSocketsEnabled) {
   })
   echo.installHandlers(app, { prefix: '/ws' })
 }
+// eslint-disable-next-line no-console
 console.log(`Serving at http://localhost:${port}`)

@@ -1,17 +1,17 @@
 [
   {
     "taskId": "74rxJM2ly",
-    "title": "qwerty",
-    "status": "new"
+    "title": "submit the report ",
+    "status": "in progress"
   },
   {
     "taskId": "74ixJM2ly",
-    "title": "Job task",
+    "title": "make a project",
     "status": "new"
   },
   {
     "taskId": "9wVSedEcR",
-    "title": "my new job task",
+    "title": "write a letter",
     "status": "new",
     "_isDeleted": false,
     "_createdAt": 1591004120140,
@@ -19,16 +19,16 @@
   },
   {
     "taskId": "uSXRxQ8bZ",
-    "title": "my new task 121",
-    "status": "in progress",
+    "title": "have lunch",
+    "status": "new",
     "_isDeleted": false,
     "_createdAt": 1591004515723,
     "_deletedAt": null
   },
   {
     "taskId": "w8f9kbNZA",
-    "title": "Natalia",
-    "status": "blocked",
+    "title": "work",
+    "status": "new",
     "_isDeleted": true,
     "_createdAt": 1591207910112,
     "_deletedAt": null
