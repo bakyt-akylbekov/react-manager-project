@@ -2,9 +2,9 @@
   {
     "taskId": "hE997SFad",
     "title": "run",
-    "status": "new",
+    "status": "in progress",
     "_isDeleted": false,
-    "_createdAt": 1592299261770,
+    "_createdAt": 1587061987000,
     "_deletedAt": null
   },
   {
@@ -12,7 +12,7 @@
     "title": "bench press",
     "status": "new",
     "_isDeleted": false,
-    "_createdAt": 1592299311208,
+    "_createdAt": 1592332387000,
     "_deletedAt": null
   },
   {

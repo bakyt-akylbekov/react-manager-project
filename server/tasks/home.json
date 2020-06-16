@@ -1,20 +1,10 @@
 [
   {
-    "taskId": "74rxJM2ly",
-    "title": "cook",
-    "status": "blocked"
-  },
-  {
-    "taskId": "74ixJM2ly",
-    "title": "clean",
-    "status": "done"
-  },
-  {
     "taskId": "9wVSedEcR",
     "title": "sleep",
     "status": "in progress",
     "_isDeleted": false,
-    "_createdAt": 1591004120140,
+    "_createdAt": 1591036387000,
     "_deletedAt": null
   },
   {
@@ -22,7 +12,7 @@
     "title": "look after baby",
     "status": "in progress",
     "_isDeleted": false,
-    "_createdAt": 1591004515723,
+    "_createdAt": 1591727587000,
     "_deletedAt": null
   },
   {
@@ -31,6 +21,22 @@
     "status": "new",
     "_isDeleted": true,
     "_createdAt": 1591207910112,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "7FR3YQxDg",
+    "title": "clean",
+    "status": "new",
+    "_isDeleted": false,
+    "_createdAt": 1592332387000,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "0Vi4AqL5c",
+    "title": "build",
+    "status": "new",
+    "_isDeleted": false,
+    "_createdAt": 1587061987000,
     "_deletedAt": null
   }
 ]

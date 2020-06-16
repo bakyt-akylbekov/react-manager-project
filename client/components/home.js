@@ -29,6 +29,9 @@ const Home = () => {
       .post(`/api/v1/tasks/${category}`, { title: newTask })
       .then(({ data }) => setTaskList([...taskList, data.newTask]))
   }
+  const timeFilter = (timespan) => {
+    axios(`/api/v1/tasks/${category}/${timespan}`).then(({ data }) => setTaskList(data))
+  }
 
   useEffect(() => {
     axios('/api/v1/categories').then(({ data }) => setCategoryList(data))
@@ -56,6 +59,7 @@ const Home = () => {
               addTask={addTask}
               updateStatus={updateStatus}
               updateTitle={updateTitle}
+              timeFilter={timeFilter}
             />
           )}
         />

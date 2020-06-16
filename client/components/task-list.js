@@ -7,7 +7,37 @@ const TaskList = (props) => {
   const [newTask, setNewTask] = useState('')
   return (
     <div>
-      <p className="text-2xl font-semibold text-center mb-5">List of tasks</p>
+      <div className="flex justify-center items-center">
+        <button
+          type="button"
+          onClick={() => props.timeFilter('all')}
+          className="bg-gray-700 hover:bg-gray-500 rounded text-white px-2 py-1 mr-2"
+        >
+          all
+        </button>
+        <button
+          type="button"
+          onClick={() => props.timeFilter('month')}
+          className="bg-gray-700 hover:bg-gray-500 rounded text-white px-2 py-1"
+        >
+          month
+        </button>
+        <button
+          type="button"
+          onClick={() => props.timeFilter('week')}
+          className="bg-gray-700 hover:bg-gray-500 rounded text-white px-2 py-1 mx-2"
+        >
+          week
+        </button>
+        <button
+          type="button"
+          onClick={() => props.timeFilter('day')}
+          className="bg-gray-700 hover:bg-gray-500 rounded text-white px-2 py-1"
+        >
+          day
+        </button>
+      </div>
+      <p className="text-2xl font-semibold text-center mb-5 mt-4">List of tasks</p>
       {props.taskList.map((el) => (
         <div key={el.taskId}>
           <TaskItem
