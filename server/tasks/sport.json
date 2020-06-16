@@ -10,7 +10,7 @@
   {
     "taskId": "HRbwAPX7c",
     "title": "bench press",
-    "status": "new",
+    "status": "done",
     "_isDeleted": false,
     "_createdAt": 1592332387000,
     "_deletedAt": null
@@ -21,6 +21,14 @@
     "status": "new",
     "_isDeleted": false,
     "_createdAt": 1592300955238,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "Jy662U864",
+    "title": "jump",
+    "status": "done",
+    "_isDeleted": false,
+    "_createdAt": 1592315428038,
     "_deletedAt": null
   }
 ]

@@ -44,7 +44,7 @@ const Home = () => {
   }, [category])
   return (
     <div className="h-screen bg-green-700 flex">
-      <div className="m-auto bg-green-100 p-12 rounded-md ">
+      <div className="m-auto bg-green-100 p-12 rounded-md">
         <Route
           exact
           path="/"

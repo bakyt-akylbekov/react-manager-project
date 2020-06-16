@@ -26,7 +26,7 @@
   {
     "taskId": "7FR3YQxDg",
     "title": "clean",
-    "status": "blocked",
+    "status": "done",
     "_isDeleted": false,
     "_createdAt": 1592332387000,
     "_deletedAt": null
@@ -34,33 +34,17 @@
   {
     "taskId": "0Vi4AqL5c",
     "title": "build",
-    "status": "blocked",
+    "status": "done",
     "_isDeleted": false,
     "_createdAt": 1587061987000,
     "_deletedAt": null
   },
   {
-    "taskId": "dUhoY28WL",
-    "title": "dfghj",
-    "status": "blocked",
-    "_isDeleted": false,
-    "_createdAt": 1592312903257,
-    "_deletedAt": null
-  },
-  {
-    "taskId": "QzN_5DMFB",
-    "title": "dfghj",
+    "taskId": "dgQKAuK1J",
+    "title": "cut apple",
     "status": "in progress",
     "_isDeleted": false,
-    "_createdAt": 1592312904525,
-    "_deletedAt": null
-  },
-  {
-    "taskId": "0yBwPs4DU",
-    "title": "rtyui",
-    "status": "new",
-    "_isDeleted": false,
-    "_createdAt": 1592312905739,
+    "_createdAt": 1592315010908,
     "_deletedAt": null
   }
 ]
