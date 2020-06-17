@@ -44,13 +44,13 @@ const Category = (props) => {
         onChange={(e) => setNewCategory(e.target.value)}
         onKeyDown={handleSearch}
         value={newCategory}
-        className="item_input bg-green-200 border border-green-500 rounded text-black p-2 mr-3 mt-4"
+        className="w-9/12 bg-green-200 border border-green-500 rounded text-black p-2 mr-3 mt-4"
         placeholder="New category"
       />
       <button
         type="button"
         onClick={() => history.push(`/${newCategory}`)}
-        className="item_button bg-green-700 hover:bg-green-500 rounded text-white p-2"
+        className="w-1/5 bg-green-700 hover:bg-green-500 rounded text-white p-2"
       >
         Add
       </button>

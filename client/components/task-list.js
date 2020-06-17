@@ -53,13 +53,13 @@ const TaskList = (props) => {
         type="text"
         onChange={(e) => setNewTask(e.target.value)}
         value={newTask}
-        className="item_input bg-green-200 border border-green-500 rounded text-black p-2 mr-4 mt-4"
+        className="w-9/12 bg-green-200 border border-green-500 rounded text-black p-2 mr-4 mt-4"
         placeholder="New task"
       />
       <button
         type="button"
         onClick={() => props.addTask(newTask)}
-        className="item_button bg-green-700 hover:bg-green-500 rounded text-white p-2"
+        className="w-1/5 bg-green-700 hover:bg-green-500 rounded text-white p-2"
       >
         Add
       </button>
