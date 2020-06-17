@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import TaskItem from './taskItem'
-import './task-list.scss'
+import '../../dist/assets/css/task-list.scss'
 
 const TaskList = (props) => {
   // через пропсы принимаем taskList
