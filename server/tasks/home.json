@@ -10,7 +10,7 @@
   {
     "taskId": "uSXRxQ8bZ",
     "title": "look after baby",
-    "status": "blocked",
+    "status": "done",
     "_isDeleted": false,
     "_createdAt": 1591727587000,
     "_deletedAt": null
@@ -45,6 +45,14 @@
     "status": "in progress",
     "_isDeleted": false,
     "_createdAt": 1592315010908,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "Af_dGcSm9",
+    "title": "cook",
+    "status": "blocked",
+    "_isDeleted": false,
+    "_createdAt": 1592410644859,
     "_deletedAt": null
   }
 ]
