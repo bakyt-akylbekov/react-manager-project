@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { history } from '../redux'
+import '../assets/scss/task-list.scss'
 
 const Category = (props) => {
   // через пропсы принимаем categoryList
