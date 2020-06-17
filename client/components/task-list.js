@@ -43,8 +43,11 @@ const TaskList = (props) => {
             title={el.title}
             status={el.status}
             taskId={el.taskId}
+            /* eslint-disable-next-line no-underscore-dangle */
+            _isDeleted={el._isDeleted}
             updateStatus={props.updateStatus}
             updateTitle={props.updateTitle}
+            deleteTask={props.deleteTask}
           />
         </div>
       ))}

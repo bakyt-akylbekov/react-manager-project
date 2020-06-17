@@ -3,7 +3,7 @@
     "taskId": "9wVSedEcR",
     "title": "sleep",
     "status": "done",
-    "_isDeleted": false,
+    "_isDeleted": true,
     "_createdAt": 1591036387000,
     "_deletedAt": null
   },
@@ -11,7 +11,7 @@
     "taskId": "uSXRxQ8bZ",
     "title": "look after baby",
     "status": "done",
-    "_isDeleted": false,
+    "_isDeleted": true,
     "_createdAt": 1591727587000,
     "_deletedAt": null
   },
@@ -27,7 +27,7 @@
     "taskId": "7FR3YQxDg",
     "title": "clean",
     "status": "done",
-    "_isDeleted": false,
+    "_isDeleted": true,
     "_createdAt": 1592332387000,
     "_deletedAt": null
   },
@@ -35,14 +35,14 @@
     "taskId": "0Vi4AqL5c",
     "title": "build",
     "status": "done",
-    "_isDeleted": false,
+    "_isDeleted": true,
     "_createdAt": 1587061987000,
     "_deletedAt": null
   },
   {
     "taskId": "dgQKAuK1J",
     "title": "cut apple",
-    "status": "in progress",
+    "status": "done",
     "_isDeleted": false,
     "_createdAt": 1592315010908,
     "_deletedAt": null

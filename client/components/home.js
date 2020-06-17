@@ -19,6 +19,13 @@ const Home = () => {
     )
     setTaskList(updateTaskList)
   }
+  const deleteTask = (id, boolean) => {
+    axios.delete(`/api/v1/tasks/${category}/${id}`, { _isDeleted: boolean })
+    const deleteTaskName = taskList.map((el) =>
+      el.taskId === id ? { ...el, _isDeleted: boolean } : el
+    )
+    setTaskList(deleteTaskName)
+  }
   const updateTitle = (title, id) => {
     axios.patch(`/api/v1/tasks/${category}/${id}`, { title })
     const updateTaskName = taskList.map((el) => (el.taskId === id ? { ...el, title } : el))
@@ -60,6 +67,7 @@ const Home = () => {
               updateStatus={updateStatus}
               updateTitle={updateTitle}
               timeFilter={timeFilter}
+              deleteTask={deleteTask}
             />
           )}
         />

@@ -3,7 +3,7 @@
     "taskId": "hE997SFad",
     "title": "run",
     "status": "in progress",
-    "_isDeleted": false,
+    "_isDeleted": true,
     "_createdAt": 1587061987000,
     "_deletedAt": null
   },
@@ -11,7 +11,7 @@
     "taskId": "HRbwAPX7c",
     "title": "bench press",
     "status": "done",
-    "_isDeleted": false,
+    "_isDeleted": true,
     "_createdAt": 1592332387000,
     "_deletedAt": null
   },
@@ -19,7 +19,7 @@
     "taskId": "74zdDtqTA",
     "title": "pull-ups",
     "status": "done",
-    "_isDeleted": false,
+    "_isDeleted": true,
     "_createdAt": 1592300955238,
     "_deletedAt": null
   },
@@ -27,8 +27,64 @@
     "taskId": "Jy662U864",
     "title": "jump",
     "status": "done",
-    "_isDeleted": false,
+    "_isDeleted": true,
     "_createdAt": 1592315428038,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "oGfL_A24S",
+    "title": "run",
+    "status": "new",
+    "_isDeleted": false,
+    "_createdAt": 1592417737234,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "GrIwJq2r1",
+    "title": "pull-ups",
+    "status": "new",
+    "_isDeleted": false,
+    "_createdAt": 1592417749632,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "k3Mk5Mqc2",
+    "title": "deadlift",
+    "status": "new",
+    "_isDeleted": false,
+    "_createdAt": 1592417755694,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "DJUCNPoa3",
+    "title": "streching",
+    "status": "done",
+    "_isDeleted": true,
+    "_createdAt": 1592417799614,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "IEZcwizp_",
+    "title": "streching",
+    "status": "done",
+    "_isDeleted": true,
+    "_createdAt": 1592418112580,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "3bdjgiF-n",
+    "title": "streching",
+    "status": "done",
+    "_isDeleted": true,
+    "_createdAt": 1592418325840,
+    "_deletedAt": null
+  },
+  {
+    "taskId": "zaESLFcl8",
+    "title": "streching",
+    "status": "new",
+    "_isDeleted": false,
+    "_createdAt": 1592418340996,
     "_deletedAt": null
   }
 ]
